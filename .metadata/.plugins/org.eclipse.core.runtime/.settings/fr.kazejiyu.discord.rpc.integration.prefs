@@ -1,0 +1,4 @@
+CUSTOM_DISCORD_DETAILS_WORDING=Editando\: ${file}
+CUSTOM_DISCORD_STATE_WORDING=Trabajando en\: ${project}
+USE_CUSTOM_WORDING=true
+eclipse.preferences.version=1

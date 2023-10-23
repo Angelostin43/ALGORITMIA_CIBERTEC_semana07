@@ -1,0 +1,51 @@
+package semana_07;
+
+public class ArregloNotas {
+
+	//  Atributos privados
+	private int[] nota;
+	private int indice;
+	//  Constructor
+	public ArregloNotas() {
+		nota = new int[10];
+		indice = 0;
+	}
+	//  Operaciones públicas básicas
+	public int tamanio() {
+		return indice;
+	}
+	public int obtener(int i) {
+		return nota[i];
+	}
+	public void adicionar(int numero) {
+		if (indice == nota.length)
+			ampliarArreglo();
+		nota[indice] = numero;
+		indice ++;
+	}
+	//  Operaciones públicas complementarias
+	public void eliminarAlFinal() {
+		indice --;
+	}
+	public void eliminarTodo() {
+		indice = 0;
+	}
+	//  Operaciones privadas
+	private void ampliarArreglo() {
+		int[] aux = nota;
+		nota = new int[indice + 10];
+		for (int i=0; i<indice; i++)
+			nota[i] = aux[i];
+	}
+	
+	public int notaMenor() {
+		int menor = nota[0];
+		for(int i=1;i<indice;i++) {
+			if(nota[i] < menor) {
+				menor = nota[i];
+			}
+		}
+		return menor;
+	}
+	
+}

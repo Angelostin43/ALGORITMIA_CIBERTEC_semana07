@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+E:\Ciclo2\Tareas y Proyectos - C2\AED_Semana_07_Lab\.metadata\.plugins\org.eclipse.jdt.core
+1564796892.index
+3293427302.index
+1922187519.index
+14526675.index
+709089098.index
